@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gustavo">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            ul li ul
+            {
+                overflow: hidden;
+                height: 0;
+                transition: height .5s;
+            }
+
+            ul li:hover
+            {
+                background: #ccc;
+            }
+
+            ul li:hover ul
+            {
+                height: 40px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <ul>
+            <li>item 1</li>
+            <li>item 2
+                <ul>
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                </ul>
+            </li>
+            <li>item 3
+                <ul>
+                    <li>item 3.1</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <hr>
+    </body>
+</html>
